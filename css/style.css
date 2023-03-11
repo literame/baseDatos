@@ -1,0 +1,72 @@
+@font-face {
+    font-family: TiltNeon;
+    src: url('../src/fonts/TiltNeon-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../src/imagen/contact-formedit.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1vh;
+}
+header{
+    height: 65px;
+    width: 100%;
+    background: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+nav{
+    display: flex;
+}
+
+.resize{
+    height: 65px;
+
+}
+
+.resize img{
+    filter: grayscale(1);
+    
+    width: 25px;
+    height: 25px;
+
+}
+
+.point{
+    display: flex;
+    height: 65px;
+    padding: 0 5px;
+}
+
+.circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    background: #000;
+    margin: 20px 5px;
+}
+
+.circle:nth-child(3){
+    background: greenyellow;
+}
+.circle:nth-child(2){
+    background: yellow;
+}
+.circle:nth-child(1){
+    background: red;
+}
+
+main{
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 1%, rgba(0,212,255,0.7737219887955182) 1%, rgba(255,255,255,1) 72%);
+    width: 100%;
+    height: 80%;
+}
