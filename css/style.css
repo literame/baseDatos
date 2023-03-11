@@ -9,9 +9,9 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('../src/imagen/contact-formedit.png');
+    /* background-image: url('../src/imagen/contact-formedit.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     height: 1vh;
 }
 header{
@@ -63,21 +63,21 @@ nav{
     background: red;
 }
 
-main{
+.contenedor{
     background: rgb(9,9,121);
     background: linear-gradient(90deg, rgba(0, 136, 255, 0.774) 4%, rgba(255,255,255,1) 95%);
-    width: 100%;
+    width: 700px;
     height: 400px;
 }
 
-.decorative{
+#decorative{
     width: 200px;
     height: 400px;
     background: orange;
-    
+
 }
 
-.decorative span{
+#decorative .objects{
     width: 100px;
     height: 40px;
     margin: 5px;
