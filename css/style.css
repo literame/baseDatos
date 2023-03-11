@@ -29,14 +29,13 @@ nav{
 
 .resize{
     height: 65px;
-
+    
 }
 
-.resize img{
-    filter: grayscale(1);
-    
+.grayimg{
     width: 25px;
     height: 25px;
+    
 
 }
 
@@ -66,7 +65,21 @@ nav{
 
 main{
     background: rgb(9,9,121);
-    background: linear-gradient(90deg, rgba(9,9,121,1) 1%, rgba(0,212,255,0.7737219887955182) 1%, rgba(255,255,255,1) 72%);
+    background: linear-gradient(90deg, rgba(0, 136, 255, 0.774) 4%, rgba(255,255,255,1) 95%);
     width: 100%;
-    height: 80%;
+    height: 400px;
+}
+
+.decorative{
+    width: 200px;
+    height: 400px;
+    background: orange;
+    
+}
+
+.decorative span{
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    background: #000;
 }
