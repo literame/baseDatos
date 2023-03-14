@@ -1,85 +1,129 @@
-@font-face {
-    font-family: TiltNeon;
-    src: url('../src/fonts/TiltNeon-Regular.ttf');
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    /* background-image: url('../src/imagen/contact-formedit.png');
-    background-repeat: no-repeat;
-    background-size: cover; */
-    height: 1vh;
-}
-header{
-    height: 65px;
     width: 100%;
-    background: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    
-}
-
-nav{
-    display: flex;
-}
-
-.resize{
-    height: 65px;
-    
-}
-
-.grayimg{
-    width: 25px;
-    height: 25px;
-    
-
-}
-
-.point{
-    display: flex;
-    height: 65px;
-    padding: 0 5px;
-}
-
-.circle{
-    width: 13px;
-    height: 13px;
-    border-radius: 10px;
-    background: #000;
-    margin: 20px 5px;
-}
-
-.circle:nth-child(3){
-    background: greenyellow;
-}
-.circle:nth-child(2){
-    background: yellow;
-}
-.circle:nth-child(1){
-    background: red;
-}
-
-.contenedor{
+    height: 100vh;
     background: rgb(9,9,121);
     background: linear-gradient(90deg, rgba(0, 136, 255, 0.774) 4%, rgba(255,255,255,1) 95%);
-    width: 700px;
-    height: 400px;
+    
 }
 
-#decorative{
+
+
+
+footer{
+    height: 9%;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid rgba(9,9,121,0.5) ;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.pointers{
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 8px;
+}
+.pointers span{
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.pointers span:nth-child(1){
+    background: greenyellow;
+    
+}
+.pointers span:nth-child(2){
+    background: yellow;
+    
+}
+.pointers span:nth-child(3){
+    background: red;
+    
+}
+
+#contenedor{
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(0, 136, 255, 0.774) 4%, rgba(255,255,255,1) 95%);
+    width: 100%;
+    height: 91%;
+    display: flex;
+}
+
+.ico_size{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.ico_size img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.decorador{
+    width: 30%;
+    height: 100%;
+    background: url('../src/imagen/lado.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.prisma{
+    background: url('../src/imagen/subtle-prism.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 200px;
-    height: 400px;
-    background: orange;
-
+    height: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
-#decorative .objects{
-    width: 100px;
-    height: 40px;
-    margin: 5px;
-    background: #000;
+.diamon{
+    background: url('../src/imagen/diamond-sunset.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.amarillo {
+    background: rgba(232,190,89,1);
+    background: linear-gradient(90deg, rgba(213, 231, 129, 0.774) 4%, rgba(232,190,89,1) 70%);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    width: 200px;
+    height: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.formulario{
+    width: 70%;
+    height: 100%;
 }
