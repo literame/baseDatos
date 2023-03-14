@@ -25,15 +25,49 @@
         <section class="formulario">
             <form action="">
 
+                <fieldset>
+                    <legend>
+                        <h1>Datos del formulario</h1>
+                    </legend>
+                    <p>
+                        <label for="">nombre</label>
+                        <input type="text" name="nombre" placeholder=" nombres">
+                        <!-- <label for="">apellido</label> -->
+                        <input type="text" name="apellido" placeholder=" apellidos">
+                    </p>
+                    <p>
+                        <label for="">Edad</label>
+                        <input type="text" name="" id="">
+                    </p>
+                    <p>
+                        <label for="">correo</label>
+                        <input type="email" name="mail" id="mail" placeholder=" mail">
+                    </p>
+                    <p>
+                        <label for="">codigo</label>
+                        <input type="text" name="telefono" placeholder=" codigo de ciudad" maxlength="9">
+
+                        <label for="">telefono</label>
+                        <input type="text" name="telefono" pattern="[0-9]*" placeholder=" ingresa tu telefono" maxlength="9">
+
+                        <label for=""> operadora</label>
+                        <select name="operadora" id="operadora">
+                            <option value="CLARO">CLARO</option>
+                            <option value="MOVISTAR">MOVISTAR</option>
+                            <option value="ENTEL">ENTEL</option>
+                            <option value="BITEL">BITEL</option>
+
+                        </select>
+                    </p>
+                    
+                </fieldset>
             </form>
         </section>
         <section class="decorador">
             <div class="prisma"></div>
             <div class="diamon"></div>
             <div class="amarillo"></div>
-            <span></span>
-            <span></span>
-            <span></span>
+            
         </section>
     </main>
 </body>

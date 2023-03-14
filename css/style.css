@@ -127,3 +127,11 @@ nav{
     width: 70%;
     height: 100%;
 }
+
+input, select{
+    height: 30px;
+}
+
+form{
+    color: aliceblue;
+}
