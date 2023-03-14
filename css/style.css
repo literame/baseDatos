@@ -135,3 +135,7 @@ input, select{
 form{
     color: aliceblue;
 }
+
+p{
+    margin: 5px 10px;
+}
