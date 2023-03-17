@@ -30,27 +30,37 @@
                         <h1>Datos del formulario</h1>
                     </legend>
                     <p>
-                        <label for="">nombre</label>
+                        <label class="nombre" for="">Nombre</label>
                         <input type="text" name="nombre" placeholder=" Nombres">
                         <!-- <label for="">apellido</label> -->
                         <input type="text" name="apellido" placeholder=" Apellidos">
                     </p>
                     <p>
-                        <label for="">Edad</label>
-                        <input type="text" name="edad" id="edad">
-                    </p>
-                    <p>
-                        <label for="">correo</label>
-                        <input type="email" name="mail" id="mail" placeholder=" mail">
-                    </p>
-                    <p>
-                        <label for="">codigo</label>
-                        <input type="text" name="telefono" placeholder=" codigo de ciudad" maxlength="9">
+                        <label class="genero" for="">Genero</label>
+                        <select name="genero" id="genero">
+                            <option value="ENTEL">SELECCIONAR</option>
+                            <option value="CLARO">MASCULINO</option>
+                            <option value="MOVISTAR">FEMENINO</option>
+                            
+                            
 
-                        <label for="">telefono</label>
+                        </select>
+
+                        <label class="edad" for="">Edad</label>
+                        <input type="text" name="edad" id="edad__input" placeholder=" Edad">
+                    </p>
+                    <p>
+                        <label class="mail" for="">Correo</label>
+                        <input type="email" name="mail" id="mail__input" placeholder=" ejemplo@ejemplo.com">
+                    </p>
+                    <p>
+                        <!-- <label for="">codigo</label>
+                        <input type="text" name="telefono" placeholder=" codigo de ciudad" maxlength="9"> -->
+
+                        <label for="">Telefono</label>
                         <input type="text" name="telefono" pattern="[0-9]*" placeholder=" ingresa tu telefono" maxlength="9">
 
-                        <label for=""> operadora</label>
+                        <label for=""> Operadora</label>
                         <select name="operadora" id="operadora">
                             <option value="CLARO">CLARO</option>
                             <option value="MOVISTAR">MOVISTAR</option>
