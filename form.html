@@ -6,47 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .form-group {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 10px; /* optional spacing between form groups */
-        }
-
-        label {
-        color: #fff;
-        background: gray;
-        width: 100px;
-        padding: 5px;
-        border-radius: 5px;
-        margin-bottom: 5px;
-        }
-
-        input, select, textarea {
-        height: 30px;
-        padding: 5px;
-        border-radius: 5px;
-        border: none;
-        background: #f0f0f0;
-        }
+      input:focus{
+        outline: none;
+        border: transparent;
+        border-bottom: 2px solid blue;
+        box-sizing: border-box;
+      }
+      input:invalid {
+        border: transparent;
+        border-bottom: 2px solid red;
+        outline: none;
+        box-sizing: border-box;
+      }
 
     </style>
 </head>
 <body>
-    <form>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+  <p>
+    <label class="nombre" for="telefono">telefono</label>
+    <input type="text" name="nombre" id="telefono" placeholder=" Nombres">
+    <!-- <label for="">apellido</label> -->
+    <input type="text" name="apellido" id="apellido" placeholder=" Apellidos">
+</p>
+<script>
+ const telefonoInput = document.getElementById('telefono');
+
+telefonoInput.addEventListener('keypress', (event) => {
+  const regex = /^[0-9-]*$/;
+  const key = String.fromCharCode(event.keyCode);
+
+  if (regex.test(key)) {
+    event.preventDefault();
+    telefonoInput.setCustomValidity('Solo se permiten números y guiones');
+  } else {
+    telefonoInput.setCustomValidity('');
+  }
+});
+
+</script>
+  
+  
+  
       
 </body>
 </html>
