@@ -19,6 +19,9 @@ body{
     background: linear-gradient(90deg, rgba(0, 136, 255, 0.774) 4%, rgba(255,255,255,1) 95%);
     display: flex;
     flex-direction: column;
+    background: linear-gradient(90deg, rgba(17, 159, 202, 0.774) 4%, rgba(116,196,188,1) 95%);
+    
+    /* background:  rgba(0, 136, 255, 0.774); */
 }
 
 header{
@@ -65,6 +68,17 @@ nav{
     background: red;
     
 }
+.ico_size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+    width: 50px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
 main{
     height: 91%;
     display: flex;
@@ -88,12 +102,12 @@ p{
     padding: 2px;
 }
 h1{
-    font-size: 32px;
+    font-size: 38px;
 
 }
 h4{
     font-family: tiltneon;
-
+    margin-bottom: 25px;
 }
 h1, h4{
     color: white;
@@ -108,6 +122,20 @@ label{
 input{
     height: 30px;
     margin: 0 3px;
+    padding-left: 3px;
+    
+}
+input:focus{
+    outline: none; 
+}
+input:focus:invalid{
+    border: 1px solid transparent;
+    border-bottom:2px solid red;
+    outline: none;
+}
+input:focus:valid{
+    border: 1px solid transparent;
+    border-bottom:2px solid rgba(82, 82, 253,0.8);
 }
 #email{
     height: 30px;
@@ -118,3 +146,57 @@ input{
 .telefono{
     width: 16.2%;
 }
+
+.dorado{
+    background: linear-gradient(90deg, rgba(213, 231, 129, 0.774) 4%, rgba(232,190,89,1) 95%);
+    height: 30px;
+    width: 100px;
+    border-radius: 14px;
+}
+
+.azul{
+    background: linear-gradient(90deg, rgba(97, 215, 216, 0.774) 4%, rgba(87,217,226,1) 95%);
+    height: 30px;
+    width: 100px;
+    border-radius: 14px;
+}
+
+.palid{
+    background: linear-gradient(90deg, rgba(174, 213, 168, 0.774) 4%, rgba(219,222,156,1) 95%);
+    height: 30px;
+    width: 100px;
+    border-radius: 14px;
+}
+
+.blight{
+    background: linear-gradient(90deg, rgb(122, 198, 187) 4%, rgb(133,202,186) 95%);
+    height: 30px;
+    width: 100px;
+    border-radius: 14px;
+}
+
+.redbox{
+    background: linear-gradient(90deg, rgb(233, 105, 139) 4%, rgb(235,93,96) 95%);
+    height: 30px;
+    width: 100px;
+    border-radius: 14px;
+}
+.sierra {
+    background-image: radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+    background-size: 10px 10px;
+    background-position: 0 0, 5px 5px;
+    background-color: rgba(97, 215, 216, 0.774);
+    border-radius: 15px;
+    height: 30px;
+    width: 300px;
+    
+}
+
+.pico{
+    
+
+    height: 30px;
+    width: 300px;
+}
+  
