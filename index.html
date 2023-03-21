@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-
-    <title>Archivo</title>
+    <link rel="stylesheet" href="stile.css">
+    <title>Document</title>
 </head>
 <body>
     <header>
@@ -20,78 +19,78 @@
                 <img src="./src/imagen/grayimg.png" alt="">
             </div>
         </nav>
+
     </header>
-    <main id="contenedor">
-        <section class="formulario">
-            <form action="#">
 
-                <fieldset>
-                    <legend>
-                        <h1>Datos del formulario</h1>
-                    </legend>
-                    
-                        <h4> &#183;  ingresa los datos solicitados en los campos</h4>
-                    
-                    <p>
-                        <label class="nombre" for="Nombre">Nombre</label>
-                        <input type="text" name="nombre" pattern="[a-zA-Z]+" id="Nombre" placeholder=" Nombres" autocomplete="off">
-                        <!-- <label for="">apellido</label> -->
-                        <input type="text" name="apellido"pattern="[a-zA-Z]+" id="Apellido" placeholder=" Apellidos" autocomplete="off">
-                    </p>
-                    <p>
-                        <label class="genero" for="genero">Genero</label>
-                        <select name="genero" id="genero">
-                            <option value="ENTEL">SELECCIONAR</option>
-                            <option value="CLARO">MASCULINO</option>
-                            <option value="MOVISTAR">FEMENINO</option>
-                            
-                            
-
-                        </select>
-
-                        <label class="edad" for="edad__input">Edad</label>
-                        <input type="text" name="edad" id="edad__input" pattern="[0-9]*" placeholder=" Edad" autocomplete="off">
-                    </p>
-                    <p>
-                        <label class="fecha" for="fecha__input">Nacimiento</label>
-                        <input type="date" name="fecha" id="fecha__input" >
-                    </p>
-                    <p>
-                        <label class="mail" for="mail__input">Correo</label>
-                        <input type="email" name="mail" id="mail__input" placeholder=" ejemplo@ejemplo.com">
-                    </p>
-                    <p>
-                        <!-- <label for="">codigo</label>
-                        <input type="text" name="telefono" placeholder=" codigo de ciudad" maxlength="9"> -->
-
-                        <label for="tel__input">Telefono</label>
-                        <input type="text" name="telefono" id="tel__input" pattern="[0-9]*" placeholder=" ingresa tu telefono" maxlength="9">
-
-                        <label for="operadora"> Operadora</label>
-                        <select name="operadora" id="operadora">
-                            <option value="CLARO">CLARO</option>
-                            <option value="MOVISTAR">MOVISTAR</option>
-                            <option value="ENTEL">ENTEL</option>
-                            <option value="BITEL">BITEL</option>
-
-                        </select>
-                    </p>
-                    
-                    
-                </fieldset>
-            </form>
-        </section>
-        <section class="decorador">
+    <main>
+        <section>
+            <form action="enviar.php" method="post">
+            <p>
+                <h1>
+                    Contact Form
+                </h1>
+                <h4>
+                    Formulario de gestion
+                </h4>
+            </p>
+            <p>
+                <label for="nombres">Nombres</label>
+                
+                    <input required type="text" id="nombres" name="nombre" class="texto" placeholder=" Nombres" autocomplete="off">
+                    <input required type="text" id="apellidos" name="apellido" class="texto"  placeholder=" Apellidos" autocomplete="off">
+                
+            </p>
+            <p>
+                <label for="edad">Edad</label>
+                <input required type="text" name="edad" id="edad" placeholder=" Edad" class="solo-numeros">
+            </p>
+            <p>
+                <label for="email">Correo</label>
+                <input required type="email" id="email" name="email" placeholder=" e: hello@world.com">
+                
+            </p>
+            <p>
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono1" class="telefono solo-numeros" placeholder=" ###" autocomplete="off">
+                <input type="text" id="telefono3" class="telefono solo-numeros" placeholder=" ###" autocomplete="off">
+                <input type="text" id="telefono2" class="telefono solo-numeros" placeholder=" ###" autocomplete="off">
+                
+            </p>
+            <p>
+                <label for="">mensaje</label>
+                <input type="text" placeholder="mensaje" >
+            </p>
+           <p>
+            <hr>
+            <button type="submit" class="validar" >Validar</button>
             
-            <div>
-                <div class="dorado"></div>
-                <div></div>
+           </p>
+        </form>
+
+        </section>
+
+        <!-- graficas -->
+        <section>
+            <div id="cont">
+                <div class="azul a"></div>
+                <div class="dorado a"></div>
+                <!-- <div class="azul a"></div> -->
+                <div class="palid a"></div>
+                <div class="blight a"></div>
+                <div class="redbox  a"></div>
+                <div class="puntos a"></div>
+                <div class="pico a"></div>
+                <div class="color a"></div>
+                <div class="color a b"></div>
+                <div class="color a c"></div>
+                <div class="redbox d a"></div>
+
+                
             </div>
+        
         </section>
     </main>
 
-    
-
-    <script src="./js/index.js"></script>
+    <script src="./ramdom.js"></script>
 </body>
 </html>

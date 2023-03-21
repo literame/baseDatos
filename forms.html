@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Archivo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="pointers">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="ico_size">
+                <img src="./src/imagen/grayimg.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <main id="contenedor">
+        <section class="formulario">
+            <form action="#">
+
+                <fieldset>
+                    <legend>
+                        <h1>Datos del formulario</h1>
+                    </legend>
+                    
+                        <h4> &#183;  ingresa los datos solicitados en los campos</h4>
+                    
+                    <p>
+                        <label class="nombre" for="Nombre">Nombre</label>
+                        <input type="text" name="nombre" pattern="[a-zA-Z]+" id="Nombre" placeholder=" Nombres" autocomplete="off">
+                        <!-- <label for="">apellido</label> -->
+                        <input type="text" name="apellido"pattern="[a-zA-Z]+" id="Apellido" placeholder=" Apellidos" autocomplete="off">
+                    </p>
+                    <p>
+                        <label class="genero" for="genero">Genero</label>
+                        <select name="genero" id="genero">
+                            <option value="ENTEL">SELECCIONAR</option>
+                            <option value="CLARO">MASCULINO</option>
+                            <option value="MOVISTAR">FEMENINO</option>
+                            
+                            
+
+                        </select>
+
+                        <label class="edad" for="edad__input">Edad</label>
+                        <input type="text" name="edad" id="edad__input" pattern="[0-9]*" placeholder=" Edad" autocomplete="off">
+                    </p>
+                    <p>
+                        <label class="fecha" for="fecha__input">Nacimiento</label>
+                        <input type="date" name="fecha" id="fecha__input" >
+                    </p>
+                    <p>
+                        <label class="mail" for="mail__input">Correo</label>
+                        <input type="email" name="mail" id="mail__input" placeholder=" ejemplo@ejemplo.com">
+                    </p>
+                    <p>
+                        <!-- <label for="">codigo</label>
+                        <input type="text" name="telefono" placeholder=" codigo de ciudad" maxlength="9"> -->
+
+                        <label for="tel__input">Telefono</label>
+                        <input type="text" name="telefono" id="tel__input" pattern="[0-9]*" placeholder=" ingresa tu telefono" maxlength="9">
+
+                        <label for="operadora"> Operadora</label>
+                        <select name="operadora" id="operadora">
+                            <option value="CLARO">CLARO</option>
+                            <option value="MOVISTAR">MOVISTAR</option>
+                            <option value="ENTEL">ENTEL</option>
+                            <option value="BITEL">BITEL</option>
+
+                        </select>
+                    </p>
+                    
+                    
+                </fieldset>
+            </form>
+        </section>
+        <section class="decorador">
+            
+            <div>
+                <div class="dorado"></div>
+                <div></div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
